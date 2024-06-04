@@ -20,3 +20,4 @@ jobs:
             cd ~/fastapi_server_1
             git pull origin main
             source venv/bin/activate
+            pip install -r requirements.txt
