@@ -19,3 +19,7 @@ jobs:
           script: |
             cd ~/fastapi_server_1
             git pull origin main
+            git pull origin main
+            source venv/bin/activate
+            pip install -r requirements.txt
+            sudo systemctl restart fastapi_server_1
