@@ -21,4 +21,4 @@ jobs:
             git pull origin main
             source venv/bin/activate
             pip install -r requirements.txt
-            echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S systemctl restart myfastapi
+            echo "${{ secrets.SUDO_PASSWORD }}" | sudo -S systemctl restart fastapi_server_1
