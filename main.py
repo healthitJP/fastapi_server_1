@@ -1,6 +1,11 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+app = FastAPI(
+    title="FastAPI_server_1",
+    description="なにかにする予定のAPI",
+    version="1.0.0",
+    swagger_ui_parameters={"docExpansion": "none"},
+)
 
 
 @app.get("/")
